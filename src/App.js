@@ -3,6 +3,10 @@ import logo from "./logo.svg";
 import "./App.css";
 import Pokemon from "./components/Pokemon/Pokemon";
 import Title from "./components/Title";
+import LikeCounter from './components/LikeCounter';
+import LikeButton from './components/LikeButton';
+import AwesomeAnimals from './components/AwesomeAnimals';
+import ArticleList from './components/ArticleList';
 
 const all_pokemon = [
   {
@@ -40,6 +44,10 @@ function App() {
     <div className="App">
       <main className="container">
         <Title content="Some Simple Title" />
+        <LikeCounter /> 
+        <LikeButton />
+        <AwesomeAnimals />
+        <ArticleList />
         <div className="row">
           {all_pokemon.map((pokemon) => (
             <div className="col-md-6 col-lg-4">
