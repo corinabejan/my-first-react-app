@@ -1,0 +1,8 @@
+.Pokemon {
+  transition: transform 0.2s ease;
+}
+.Pokemon:hover {
+  cursor: default;
+  transform: rotate(360deg);
+  transition: all 0.3s ease-in-out 0s;
+}
